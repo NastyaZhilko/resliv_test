@@ -1,9 +1,9 @@
 import {Dispatch} from 'redux';
-import {api, UserType} from '../api/api';
+import {api, EmployeeType} from '../api/api';
 
 type InitialStateType = {
     error: string | null;
-    users: UserType[]
+    users: EmployeeType[]
 }
 
 const initialState: InitialStateType = {
@@ -46,7 +46,7 @@ type ActionsTypes = ReturnType<typeof errorDetectedAC>
 
 
 export const errorDetectedAC = (error: string | null) => ({type: 'APP/ERROR_DETECTED', payload: {error}} as const)
-export const setUser = (users: UserType[]) => ({type: 'APP/SET_USERS', payload: {users}} as const)
+export const setUser = (users: EmployeeType[]) => ({type: 'APP/SET_USERS', payload: {users}} as const)
 export const deleteUser = (userId: number) => ({type: 'APP/DELETE_USER', payload: {userId}} as const)
 export const addUser = (first_name: string, last_name: string) => ({
     type: 'APP/ADD_USER', payload: {

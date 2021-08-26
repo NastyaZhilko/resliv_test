@@ -13,9 +13,9 @@ const Routes =()=>{
     return (
         <div>
             <Switch>
-                <Route path={"/"} exact render={() => <Redirect to={PATH.MAIN}/>}/>
-                <Route path={PATH.MAIN} exact render={() => <Main/>}/>
-                <Route path={PATH.EMPLOYEES} exact render={() => <Employees/>}/>
+                <Route path={"/"} exact render={() => <Redirect to={'/main'}/>}/>
+                <Route path={'/main'} exact render={() => <Main/>}/>
+                <Route path={"/employees"} exact render={() => <Employees/>}/>
                 <Route render={() => <NotFound/>}/>
             </Switch>
         </div>

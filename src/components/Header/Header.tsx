@@ -14,8 +14,8 @@ function Header() {
         <div className={style.menuWrapper}>
             <div className={style.burgerMenu} onClick={toggle}>&#9776;</div>
             <div className={`${style.containerMenuLinks} ${activeMenu && style.activeMenu}`}>
-                <NavLink to={PATH.MAIN} activeClassName={style.active} className={style.menuLinks}> Главная</NavLink>
-                <NavLink to={PATH.EMPLOYEES} activeClassName={style.active} className={style.menuLinks}> Сотрудники</NavLink>
+                <NavLink to={PATH.MAIN} activeClassName={style.active} className={style.menuLinks}> Main</NavLink>
+                <NavLink to={PATH.EMPLOYEES} activeClassName={style.active} className={style.menuLinks}> Employees</NavLink>
             </div>
         </div>
     );

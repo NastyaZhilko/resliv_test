@@ -16,7 +16,7 @@ export const api = {
     }
 }
 
-export type UserType = {
+export type EmployeeType = {
     id: number
     email: string
     first_name: string
@@ -24,7 +24,7 @@ export type UserType = {
     avatar: string
 }
 export type UsersResponseType = {
-    data: UserType[]
+    data: EmployeeType[]
     page: number;
     per_page: number;
     support: {
